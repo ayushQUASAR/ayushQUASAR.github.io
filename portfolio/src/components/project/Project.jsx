@@ -74,7 +74,7 @@ const Project = () => {
                         </ul>
                         <div className='icons-p'>
                             <li> <a href="https://github.com/ayushQUASAR/Conference-app" target='_blank'> <FontAwesomeIcon icon={faGithub} /></a>
-                               </li>
+                            </li>
                             <li><a href="https://conferencetry.onrender.com/" target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a> </li>
                         </div>
                     </div>

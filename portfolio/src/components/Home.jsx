@@ -35,7 +35,7 @@ const Home = () => {
       </aside>
       <section className='mysection'><MyContent /></section>
       <section className='mysection'><About /></section>
-      <section className='mysection'><Work /></section>
+      {/* <section className='mysection'><Work /></section> */}
       <Project />
       <Contact/>
 
