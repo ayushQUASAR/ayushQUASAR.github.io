@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  color: var(--txt);
+}
+:root {
+  --bgc: rgb(10, 25, 47);
+  --txt: rgb(130, 246, 110);
+}
+
+.home-wrapper {
+  background-color: var(--bgc);
+
+  width: 100vw;
+  min-height: 100%;
+  position: absolute;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+.mysection {
+  width: 80%;
+  margin: 0px auto;
+  padding: 50px 0px;
+  max-width: 1000px;
+  display: flex;
+
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mycontent h2 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+.leftmy{
+  width: 60%;
+  padding:0 30px ;
+}
+
+.mycontent div p {
+  font-size: 20px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+}
+.mycontent h3 {
+  display: block;
+  font-size: 70px;
+  line-height: 1.1;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 20px 0px 10px;
+  font-weight: 600;
+}
+.mycontent h2 {
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 1.1;
+  margin: 0;
+}
+.touch {
+  width: fit-content;
+  color: rgb(100, 255, 218);
+  background-color: transparent;
+  border: 1px solid rgb(100, 255, 218);
+  border-radius: 3px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  margin-top: 50px;
+}
+.aboutme {
+  color: rgb(204, 214, 246);
+}
+ .aboutme h3::before {
+  counter-increment: section 1;
+  content: "0" counter(section) ".";
+  margin-right: 10px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  color: rgb(100, 255, 218);
+  font-size: 20px;
+  position: relative;
+  bottom: -3px;
+}
+.aboutme h3::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 300px;
+  background-color: rgb(48, 60, 85);
+  position: relative;
+  top: 4px;
+  margin-left: 20px;
+}
+.aboutme h3 {
+  position: relative;
+  display: flex;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 10px 0px 40px;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 32px;
+}
+.asidetag {
+  color: var(--txt);
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: auto;
+  z-index: 10;
+  color: rgb(100, 255, 218);
+  left: 40px;
+}
+
+.asidetag ul {
+  display: flex;
+  flex-direction: column;
+  -moz-box-align: center;
+  align-items: center;
+
+  margin: 0px;
+  list-style: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-top: 10px;
+
+  /* background-color: #bdbdbd4b; */
+}
+.asidetag ul::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: rgb(168, 178, 209);
+}
+.asidetag ul li svg {
+  height: 30px;
+  margin: 10px auto;
+}
+
+.mymail {
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console,
+    Monaco, monospace;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 20px;
+}
+.right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: rgb(100, 255, 218);
+}
+.right::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: rgb(168, 178, 209);
+}
+.mymail a {
+  text-decoration: none;
+  color: var(--txt);
+}
+.myimg img {
+  position: relative;
+  max-width: 300px;
+  margin-left: 60px;
+  filter: grayscale(80%);
+}
+.content-my {
+  display: flex;
+
+  color: rgb(136, 146, 176);
+  line-height: 1.3;
+  font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui,
+    BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+}
+.content-my div ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: rgb(100, 255, 218);
+  font-size: 14px;
+  line-height: 12px;
+}
+.content-my div ul li {
+  list-style: none;
+  position: relative;
+
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console,
+    Monaco, monospace;
+  font-size: 13px;
+  color: rgb(100, 255, 218);
+}
+p::selection {
+  background-color: rgb(136, 146, 176);
+  color: rgb(204, 214, 246);
+}
+.content-my div ul {
+  display: grid;
+
+  padding: 40px 0;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+}
+
+.myimg::before {
+  content: " ";
+  position: absolute;
+  top: 20px;
+  bottom: -19px;
+  right: 5px;
+  border: 5px solid var(--txt);
+  width: 73%;
+  transition: all 0.1s cubic-bezier(0.17, 0.67, 0.77, 0.72);
+  left: 123px;
+}
+.myimg:hover:before {
+  transform: translate(5px, 5px);
+}
+.myimg:hover img {
+  filter: grayscale(0);
+}
+.myimg {
+  border-radius: 3px;
+  margin-left: 50px;
+  /* transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; */
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+a {
+  text-decoration: none;
+  color: var(--txt);
+}
+.content-my div p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+.myimg-wrapper{
+  width: 40%;
+}

@@ -1,0 +1,53 @@
+.nav {
+  padding: 25px 50px;
+  position: sticky;
+  width: 80%;
+  margin: auto;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: space-between;
+}
+.nav-optn {
+  display: flex;
+  font-size: 15px;
+}
+.nav-optn ol {
+  display: flex;
+  counter-reset: item;
+}
+
+.nav-optn ol li::before {
+  content: "0" counter(item) ".";
+  text-align: right;
+  color: var(--txt);
+  font-size: 12px;
+}
+.nav-optn ol li p{
+    padding:0 10px ;
+}
+.nav-optn ol li {
+  margin: 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  counter-increment: item;
+  list-style-type: none;
+  color: var(--txt);
+}
+.polygon {
+  width: 40px;
+  height: 40px;
+}
+.polygon svg {
+  color: var(--txt);
+}
+.resume{
+    text-align: center;
+    color: var(--txt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: solid 1px var(--txt);
+}
