@@ -1,7 +1,7 @@
 .nav {
   padding: 25px 50px;
   position: sticky;
-  width: 80%;
+  width: 100%;
   margin: auto;
   /* margin-top: 30px; */
   display: flex;
@@ -24,9 +24,15 @@
 }
 .nav-optn ol li p{
     padding:0 10px ;
+    color: rgb(181, 182, 184);
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+
+}
+.nav-optn ol li p:hover{
+color: var(--txt);
 }
 .nav-optn ol li {
-  margin: 5px 30px;
+  padding: 12px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +47,9 @@
 .polygon svg {
   color: var(--txt);
 }
+.resume:hover{
+  background-color: rgba(105, 255, 100, 0.07);
+}
 .resume{
     text-align: center;
     color: var(--txt);
@@ -48,6 +57,6 @@
     align-items: center;
     justify-content: center;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     outline: solid 1px var(--txt);
 }

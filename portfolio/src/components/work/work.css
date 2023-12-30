@@ -5,7 +5,7 @@
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
   font-weight: normal;
-  color: rgb(100, 255, 218);
+  color:var(--txt);
   font-size: 20px;
   position: relative;
   bottom: -3px;
@@ -82,7 +82,7 @@ border-left:2px solid rgb(120, 142, 187) ;
 
 .btn-li button:focus,.btn-li button:hover{
     background-color: rgb(23, 42, 69);
-    color: rgb(100, 255, 218);
+    color: var(--txt);
     outline: 0px;
     transition: all 0.3s ease;
     
@@ -90,7 +90,7 @@ border-left:2px solid rgb(120, 142, 187) ;
 
 .btn-li button:focus{
     
-    border-left: 2px solid  rgb(100, 255, 218);
+    border-left: 2px solid var(--txt);
 
 }
 .exp{

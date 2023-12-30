@@ -14,6 +14,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import About from './About'
 import Work from './work/Work'
 import Project from './project/Project'
+import Contact from './contact/Contact'
 const Home = () => {
   return (
     <div className='home-wrapper'>
@@ -36,6 +37,7 @@ const Home = () => {
       <section className='mysection'><About /></section>
       <section className='mysection'><Work /></section>
       <Project />
+      <Contact/>
 
 
     </div>

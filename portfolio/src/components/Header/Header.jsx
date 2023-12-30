@@ -18,7 +18,7 @@ const Header = () => {
 
         </ol>
         <div className='resume'>
-          <p>Resume</p>
+          <p> <a href="https://drive.google.com/file/d/1kCPoTutziI721eR7prkXjWQ4HC1mhFqa/view?usp=drive_link" target='_blank'>Resume</a></p>
         </div>
       </div>
 
